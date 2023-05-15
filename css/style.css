@@ -1,0 +1,40 @@
+/*ESTRUCTURA*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;  
+}
+.row1{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.column-nav{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.column-2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.column-4{
+    width: 25%;
+    margin: 8px;
+}
+.column-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+.navbar-brand{
+    margin: 10px;
+}
+.navbar-brand:hover{
+    background-color: rgb(255, 0, 0);
+}
