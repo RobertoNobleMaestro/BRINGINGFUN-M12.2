@@ -91,9 +91,7 @@ body{
     width: 20%;
     height: 90%;
   }
-  h2{
-    font-size: 70px;
-  }
+
 .carousel::after{
   background-color: rgb(147,212,252); 
   bottom: 0;
@@ -105,12 +103,7 @@ body{
   width: 100%;
   z-index: 9998;
 }
-.ali-t{
-  text-align: center; 
-  padding-left: 15%; 
-  padding-right: 15%;
-}
-  h1, h2 {
+h1, h2 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
