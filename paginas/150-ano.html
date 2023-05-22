@@ -9,6 +9,21 @@
     <link rel="icon" href="../img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      function validarCantidad() {
+        var cantidadInput = document.getElementById("cantidad");
+        var cantidad = parseFloat(cantidadInput.value);
+  
+        if (isNaN(cantidad) || cantidad < 0) {
+          alert("Ingresa una cantidad válida.");
+          cantidadInput.value = "";
+          return false;
+        }
+  
+        cantidadInput.value = "$" + cantidad.toFixed(2);
+        return true;
+      }
+    </script>
 </head>
 <body>  
       <nav class="navbar navbar-light" id="navbar" style="background-color: rgb(180,221,222);">
@@ -45,16 +60,38 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <div class="row1 alig-t" >
+    <div class="row1 ali-t" >
       <div class="column-3">
-        <h1>GRACIAS!</h1>
+        <h1>¡Hazte socio!</h1>
       </div>
+      <div class="column-txt-donar">
+      <p>¡Únete a nuestra causa y ayuda a los niños de África con solo 15 euros al mes! Cada euro cuenta y cada donación es valiosa. Al unirte a nosotros, te convertirás en parte de una comunidad dedicada a cambiar vidas y construir un futuro mejor para estos pequeños. Juntos, podemos darles esperanza y oportunidades que merecen.</p>
+      </div>
+    </div>
+    <div class="row1" style="justify-content: center;">
       <div class="column-3">
-      <p>Desde BringingFun queremos agradeceros eternamente por todo vuestro apoyo y donaciones por nuestra causa. Dicho esto estamos muy felices de anunciaros que desde Noviembre de 2022 Bringing fun ha logrado recaudar MÁS DE 1 MILLON DE EUROS. Estas cifras
-        són muy altas para una ONG tan nueva como BringingFun por lo cual estamos muy agradecidos por estas cifras y les podemos asegurar que todo este dinero influenciara mucho en la felicidad de miles de niños.  </p>
+        <h1>15€ / mes</h1>
+      </div>
+      <div class="column-4 estilo1"> 
+        <form action="procesar_pago.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+          
+            <label for="tarjeta">Número de tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required><br>
+          
+            <label for="caducidad">Fecha de caducidad:</label>
+            <input type="text" id="caducidad" name="caducidad" required><br>
+          
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br>
+          
+            <button type="submit">Suscribirse</button>
+          </form>
+      </div>
       </div>
     </div>
     <br>
