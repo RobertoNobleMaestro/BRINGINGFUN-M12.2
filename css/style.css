@@ -103,9 +103,69 @@ body{
   width: 100%;
   z-index: 9998;
 }
+footer{
+  color: white;
+  background-color: black;
+}
 h1, h2 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+.column-txt-donar {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+.line-op{
+  border: 3px solid black; 
+  border-radius: 10px; 
+  background-color: white;
+}
+.alig-t{
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  padding: 3%;
+}
+button[type="submit"]:hover {
+  background-color: orange;
+  border-radius: 5%;
+}
+@media only screen and (max-width: 600px) {
+
+      .navbar{
+        align-content: space-between
+
+    }
+    .column-2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  }

@@ -62,35 +62,35 @@
     <br>
     <div class="row1 ali-t" >
       <div class="column-3">
-        <h1>¿Quieres donar?</h1>
+        <h1>¡Hazte socio!</h1>
       </div>
       <div class="column-txt-donar">
-      <p>En nuestra ONG, cada donación cuenta. No importa el monto, tu contribución es valiosa y marcará una diferencia tangible en la vida de aquellos que más lo necesitan. Te invitamos a ser parte de nuestra misión de transformar vidas y construir un mundo mejor. Haz tu donación hoy y sé la razón por la cual alguien sonríe, sueña y tiene la oportunidad de un futuro mejor. ¡Únete a nosotros y se parte del cambio!</p>
+      <p>¡Únete a nuestra causa y ayuda a los niños de África con solo 5 euros al mes! Cada euro cuenta y cada donación es valiosa. Al unirte a nosotros, te convertirás en parte de una comunidad dedicada a cambiar vidas y construir un futuro mejor para estos pequeños. Juntos, podemos darles esperanza y oportunidades que merecen.</p>
       </div>
     </div>
     <div class="row1" style="justify-content: center;">
       <div class="column-3">
-        <h1>¡Colabora!</h1>
+        <h1>5€ / mes</h1>
       </div>
       <div class="column-4 estilo1"> 
-        <form action="procesar_encuesta.php" method="POST">
-          <label style="margin-top: 20px;" for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required><br><br>
-
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required><br><br>
-      
-          <label for="cantidad">Cantidad a donar:</label>
-          <input type="text" id="cantidad" name="cantidad" min="0" step="0.01" onblur="validarCantidad()" required><br><br>
-      
-          <label for="metodo_pago">Método de pago preferido:</label>
-          <select id="metodo_pago" name="metodo_pago">
-            <option value="tarjeta">Tarjeta de crédito</option>
-            <option value="paypal">PayPal</option>
-            <option value="transferencia">Transferencia bancaria</option>
-          </select><br><br>      
-          <input style="margin-bottom: 20px;" type="submit" value="Enviar">
-        </form>
+        <form action="procesar_pago.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+          
+            <label for="tarjeta">Número de tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required><br>
+          
+            <label for="caducidad">Fecha de caducidad:</label>
+            <input type="text" id="caducidad" name="caducidad" required><br>
+          
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br>
+          
+            <button type="submit">Suscribirse</button>
+          </form>
       </div>
       </div>
     </div>

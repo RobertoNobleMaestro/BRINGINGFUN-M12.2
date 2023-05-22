@@ -24,8 +24,8 @@ body{
 .column-2{
     width: 50%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    align-content: center
 }
 .column-5{
     width: 100%;
@@ -35,7 +35,6 @@ body{
     text-align: center;
     margin-top: 30px;
 }
-
 .estilo2{
   background-color: rgb(236,155,139);    
   border-radius: 10px; 
@@ -62,40 +61,47 @@ header{
     align-items: center;
     background-image: url(../img/child-people-outdoors-portrait.jpg)
 }
+.navbar-brand{
+  margin: 10px;
+}
+#navbar {
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.568);
+}
 .dropdown {
-    position: relative;
-    display: flex;
-  }
-  .dropdown-content {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    min-width: 160px;
-    background-color: rgba(0, 0, 0, 0.705);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    color: white;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    top: 100%; 
-    left: 0; 
-  }
-  .dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-decoration: none;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    opacity: 1;
-    visibility: visible;
-  }
-.underline-link:hover {
-    text-decoration: underline;
+  position: relative;
+  display: flex;
+}
+.dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  min-width: 160px;
+  background-color: rgba(0, 0, 0, 0.705);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: white;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  top: 100%; 
+  left: 0; 
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
 }
 .cuadrado{
     width: 70%;
     background-color: rgba(236, 155, 139, 0.61);    
-    height: 50%;    
+    height: 50%; 
+    border-radius: 10px;   
 }   
 .button-container {
     display: flex;
@@ -111,18 +117,20 @@ header{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.5s ease;
     width: 100%;
+    justify-content: center;
+    display: flex;
   }
   
   .color-change-button:active,
   .color-change-button:focus {
     background-color: #ff7575;
     border: 2px solid rgb(99, 70, 64);
-  }
+  }  
   h1, h2 {
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
-  
