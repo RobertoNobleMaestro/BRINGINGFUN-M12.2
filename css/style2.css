@@ -68,6 +68,8 @@ header{
   width: 100%;
   z-index: 9999;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.568);
+  background-color: white;
+
 }
 .dropdown {
   position: relative;
@@ -131,7 +133,10 @@ header{
     display: none;
     color: white;
   }
-
+  footer{
+    color: white;
+    background-color: black;
+  }
   #texto1:target,
   #texto2:target {
     display: flex;
@@ -143,4 +148,8 @@ header{
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .text-ce{
+    text-align: center;
+    justify-content: center;
   }

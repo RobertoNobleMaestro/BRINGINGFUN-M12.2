@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nandinagari&display=swap');
-/*ESTRUCTURA*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* estructura */
 *{
-    box-sizing: border-box;
-    font-family: 'Noto Sans Nandinagari', sans-serif;
+    box-sizing: border-box;    
+    font-family: 'Poppins', sans-serif;
 }
 body{
     margin: 0 auto;
@@ -21,21 +21,18 @@ body{
 .column-2{
     width: 50%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .estilo1{
     background-color: rgb(180,221,222);    
-    border-radius: 10px; 
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.568);
     text-align: center;
 }
 .estilo2{
   background-color: rgb(236,155,139);    
-  border-radius: 10px; 
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.568);
   text-align: center;
-  margin: 9px;
 }
 .column-4{
     width: 30%;
@@ -82,7 +79,6 @@ body{
     display: block;
     text-decoration: none;
   }
-  
   .dropdown:hover .dropdown-content {
     opacity: 1;
     visibility: visible;
@@ -91,7 +87,6 @@ body{
     width: 20%;
     height: 90%;
   }
-
 .carousel::after{
   background-color: rgb(147,212,252); 
   bottom: 0;
@@ -112,6 +107,7 @@ h1, h2 {
   text-align: center;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font: 600;
 }
 .column-txt-donar {
   margin-left: 100px;
@@ -120,7 +116,6 @@ h1, h2 {
 }
 .line-op{
   border: 3px solid black; 
-  border-radius: 10px; 
   background-color: white;
 }
 .alig-t{
@@ -156,16 +151,66 @@ button[type="submit"]:hover {
   background-color: orange;
   border-radius: 5%;
 }
-@media only screen and (max-width: 600px) {
-
-      .navbar{
-        align-content: space-between
-
+.le-ma{
+  color: rgb(0, 0, 0);
+}
+.le-ma:hover{
+  color: blue;
+}
+a {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  }
+  a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .8s;
+  }
+  a:hover:after {
+  width: 100%;
+  background: #333;
+  }
+  a:hover:after {
+    width: 100%;
+    background: #333;
     }
+  .marg-t-b{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .text-ce{
+    text-align: center;
+    justify-content: center;
+  }
+.color-g{
+  background-color: rgb(206, 206, 206);
+}
+.enlace-drive {
+  color: black;
+}
+.enlace-drive :hover {
+  color: black;
+}
+@media only screen and (max-width: 600px) {
     .column-2{
         width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .column-4{
+        width: 100%;
+        flex-wrap: wrap
+    }
+    p{
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 16px;
     }
   }
