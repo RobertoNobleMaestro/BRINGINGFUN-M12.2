@@ -26,13 +26,13 @@
     </script>
 </head>
 <body>  
-  <nav class="navbar navbar-light" id="navbar" style="background-color: rgb(180,221,222);">
-    <div class="column-nav line-nav">
+  <nav class="navbar navbar-light" id="navbar" style="background-color: rgb(251,203,140);">
+    <div class="column-nav1">
       <a class="navbar-brand" href="../index.html" style="margin-left: 20px;">
         <img src="../img/Banner.png" width="150" height="80">
       </a>
     </div>
-    <div class="column-nav" style="justify-content: flex-end;">
+    <div class="column-nav2" style="justify-content: flex-end;">
       <a class="navbar-brand line-nav" href="../index.html">
         Quienes somos
       </a>
@@ -54,16 +54,7 @@
       </a>
     </div>
   </nav>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    <div class="row1 ali-t" >
+    <div class="row1 ali-t white-space">
       <div class="column-3">
         <h1>¡INSCRIBETE!</h1>
       </div>
@@ -74,8 +65,11 @@
         En Bringing-Fun, nos complace invitarlos a participar en nuestro próximo evento solidario. Estamos entusiasmados por contar con personas comprometidas como tú, dispuestas a contribuir a nuestra causa y ayudar a aquellos que más lo necesitan. Completa el siguiente formulario de inscripción y forma parte de esta experiencia gratificante.</p>
       </div>
     </div>
-    <div class="row1" style="justify-content: center;">
-      <div class="column-4 estilo1"> 
+    <div class="row1" style="justify-content: center;">´
+    <div class="column-3">
+      <h1></h1>
+    </div>
+      <div class="column-2 estilo1" style="padding: 10px; background-color: rgb(253, 229, 197);"> 
         <form action="procesar_formulario.php" method="POST">
             <label for="nombre">Nombre completo:</label>
             <input type="text" id="nombre" name="nombre" required><br><br>
@@ -93,9 +87,10 @@
             <select id="tipo_participacion" name="tipo_participacion" required>
               <option value="voluntario">Voluntario</option>
               <option value="asistente">Asistente</option>
-            </select><br><br>
-        
-            <label for="areas_interes">Áreas de interés:</label><br>
+            </select>
+        </form>
+        <form action="procesar_formulario.php" method="POST">
+          <label for="areas_interes">Áreas de interés:</label><br>
             <input type="checkbox" id="ayuda_alimentaria" name="areas_interes[]" value="ayuda_alimentaria">
             <label for="ayuda_alimentaria">Ayuda alimentaria</label><br>
             <input type="checkbox" id="educacion_desarrollo" name="areas_interes[]" value="educacion_desarrollo">
@@ -107,7 +102,6 @@
             <input type="checkbox" id="otro" name="areas_interes[]" value="otro">
             <label for="otro">Otro (especificar):</label>
             <input type="text" id="otro_interes" name="otro_interes"><br><br>
-        
             <label for="disponibilidad">Disponibilidad de tiempo:</label><br>
             <input type="checkbox" id="manana" name="disponibilidad[]" value="manana">
             <label for="manana">Mañana</label><br>
@@ -115,20 +109,17 @@
             <label for="tarde">Tarde</label><br>
             <input type="checkbox" id="todo_dia" name="disponibilidad[]" value="todo_dia">
             <label for="todo_dia">Todo el día</label><br><br>
-    
             <label for="comentarios">Comentarios o habilidades especiales:</label><br>
             <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
-        
             <input type="submit" value="Enviar">
           </form>
       </div>
-        
     </div>
     <br>
     <footer style="border-top: 3px solid black; padding-top: 20px;">
       <div class="row1">
         <div class="column-2" style="align-items: center;">
-          <img src="../img/colaboradores/Ministerio_ESP.png" alt="" width="400px" height="130px">
+          <img src="../img/colaboradores/Ministerio_ESP.png" alt="" width="50%" height="85%">
        </div>
         <div>
           <p>Av. Mare de Déu de Bellvitge, 100, 110, 08907 L'Hospitalet de Llobregat, Barcelona</p>   

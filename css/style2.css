@@ -15,11 +15,17 @@ body{
     margin-right: 77px;
     height: 100%;
 }
-.column-nav{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
+.column-nav1{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.column-nav2{
+position: relative;
+display: flex;
+flex-wrap: wrap;
+width: 50%;
 }
 .column-2{
     width: 50%;
@@ -50,7 +56,6 @@ body{
     display: flex;
     justify-content: center;
 }
-
 header{
     background-size:cover;
     background-repeat: repeat;
@@ -152,4 +157,28 @@ header{
   .text-ce{
     text-align: center;
     justify-content: center;
+  }
+  @media only screen and (max-width: 600px) {
+    .column-4{
+      width: 0%;
+  }
+  .column-3{
+      width: 100%; 
+  }  
+  .cuadrado{
+    width: 100%;
+    height: 90%; 
+  }   
+  .column-nav1{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .column-nav2{
+    width: 100%;
+  }
+  header {
+    height: 60vh;
+    background-image url(../img/child-people-outdoors-portrait.jpg)
+    }
   }
